@@ -1,5 +1,25 @@
 
 .temp {
-    color: hotpink;
+    color: rgb(0, 225, 255);
     font-size: 40px;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    color: black;
+    margin: 0px;
+}
+
+header {
+    background-color: hotpink;
+    padding: 48px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 24px;
+}
+
