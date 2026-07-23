@@ -1,10 +1,4 @@
 
-.temp {
-    color: rgb(0, 225, 255);
-    font-size: 40px;
-    text-align: center;
-}
-
 body {
     font-family: Helvetica, Arial, Verdana, sans-serif;
     min-height: 100vh;
@@ -22,6 +16,10 @@ header {
     justify-content: space-between;
     padding: 10px;
     border-bottom: 10px solid rgb(0, 225, 255);
+}
+
+a {
+    cursor: pointer;
 }
 
 nav {
@@ -186,7 +184,7 @@ h2 {
     padding: 25px 65px;
     border: 9px double hotpink;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .castButton:hover {
@@ -197,9 +195,10 @@ h2 {
 
 footer {
     background-color: hotpink;
-    color: white;
+    color: rgb(234, 250, 255);
     text-align: center;
     padding: 10px;
     font-weight: bold;
+
 }
 
