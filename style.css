@@ -29,34 +29,9 @@ a {
     font-size: 30px;
 }
 
-.content__heading {
-    color: hotpink;
-    margin: 0px;
-    padding: 0px;
-    font-size: 35px;
-    text-decoration: underline;
-}
-
-.cast__heading {
-    color: hotpink;
-    margin: 0px;
-    padding: 0px;
-    font-size: 35px;
-    text-decoration: underline;
-}
-
-.content__heading--blue {
-    color: rgb(0, 225, 255);
-}
-
 .header__logo {
     width: 90px;
     border-radius: 10px;
-}
-
-.content__heart {
-    width: 40px;
-    margin-bottom: 10px;
 }
 
 a.header__link {
@@ -73,6 +48,13 @@ a.header__link:hover {
   border-radius: 5px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero {
     background-color: hotpink;
     width: 100%;
@@ -84,6 +66,23 @@ a.header__link:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.content__heading {
+    color: hotpink;
+    margin: 0px;
+    padding: 0px;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.content__heading--blue {
+    color: rgb(0, 225, 255);
+}
+
+.content__heart {
+    width: 40px;
+    margin-bottom: 10px;
 }
 
 .content {
@@ -140,7 +139,6 @@ a.header__link:hover {
     margin-top: 5px;
 }
 
-
 .content__label {
     color: rgb(0, 225, 255);
     margin: 0px;
@@ -159,19 +157,18 @@ a.header__link:hover {
     margin-top: 5px;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .cast {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-evenly;
-    gap: 50px;*/
     align-items: center;
+}
+
+.cast__heading {
+    color: hotpink;
+    margin: 0px;
+    padding: 0px;
+    font-size: 35px;
+    text-decoration: underline;
 }
 
 .cast__image {
@@ -186,16 +183,16 @@ a.header__link:hover {
 }
 
 .cast__button {
-  background-color: hotpink;
-  color: rgb(0, 225, 255);
-  border: 9px double rgb(0, 225, 255);
-  border-radius: 5px;
-  width: auto;
-  font-size: 27px;
-  padding: 25px 65px;
-  cursor: pointer;
-  margin-bottom: 60px;
-  font-weight: bold;
+    background-color: hotpink;
+    color: rgb(0, 225, 255);
+    border: 9px double rgb(0, 225, 255);
+    border-radius: 5px;
+    width: auto;
+    font-size: 27px;
+    padding: 25px 65px;
+    cursor: pointer;
+    margin-bottom: 60px;
+    font-weight: bold;
 }
 
 .footer {
