@@ -53,7 +53,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-a {
+a.navLink {
     text-decoration: none;
     color: rgb(234, 250, 255);
     cursor: pointer;
@@ -61,7 +61,7 @@ a {
     font-weight: bold;
 }
 
-a:hover {
+a.navLink:hover {
   background-color: rgb(0, 225, 255);
   transform: translateY(-2px);
   border-radius: 5px;
@@ -163,9 +163,36 @@ h2 {
     align-items: center;
 }
 
+.main__cast {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;
+    gap: 50px;*/
+    align-items: center;
+}
+
 .castImage {
     border-radius: 10px;
-    margin: 40px 0px;
+    margin: 30px 0px;
+}
+
+.castButton {
+    background-color: rgb(0, 225, 255);
+    border-radius: 5px;
+    width: auto;
+    color: hotpink;
+    font-weight: bold;
+    font-size: 27px;
+    padding: 25px 65px;
+    border: 9px double hotpink;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.castButton:hover {
+  background-color: hotpink;
+  color: rgb(0, 225, 255);
+  border: 9px double rgb(0, 225, 255);
 }
 
 footer {
