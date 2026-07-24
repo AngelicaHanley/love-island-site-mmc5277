@@ -273,3 +273,197 @@ a.header__link:hover {
 
 }
 
+/* Finale Page */
+
+.finale {
+padding: 50px 7%;
+}
+
+.finale__intro {
+max-width: 850px;
+margin: 0 auto 45px;
+text-align: center;
+}
+
+.finale__eyebrow {
+color: var(--secondary);
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 2px;
+margin-bottom: 8px;
+text-transform: uppercase;
+}
+
+.finale__heading {
+color: var(--primary);
+font-size: 42px;
+margin: 0 0 18px;
+}
+
+.finale__intro-text {
+font-size: 19px;
+line-height: 1.7;
+margin: 0;
+}
+
+.finale__winner {
+align-items: center;
+background-color: rgb(234, 250, 255);
+border: 10px double var(--secondary);
+display: flex;
+gap: 40px;
+margin: 0 auto 60px;
+max-width: 1100px;
+padding: 30px;
+}
+
+.finale__winner-image-container {
+flex: 1;
+}
+
+.finale__winner-image {
+display: block;
+height: 430px;
+object-fit: contain;
+object-position: center top;
+width: 100%;
+}
+
+.finale__winner-content {
+flex: 1;
+}
+
+.finale__winner-badge {
+animation: finale-winner-pulse 2s ease-in-out infinite;
+background-color: var(--secondary);
+border-radius: 30px;
+color: var(--primary);
+display: inline-block;
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 15px;
+padding: 10px 22px;
+text-transform: uppercase;
+}
+
+.finale__placement {
+color: var(--secondary);
+font-size: 18px;
+font-weight: bold;
+margin: 0 0 8px;
+text-transform: uppercase;
+}
+
+.finale__couple-name {
+color: var(--primary);
+font-size: 34px;
+margin: 0 0 18px;
+}
+
+.finale__couple-text,
+.finale__card-text {
+font-size: 18px;
+line-height: 1.6;
+}
+
+.finale__section-heading {
+color: var(--primary);
+font-size: 34px;
+margin-bottom: 30px;
+text-align: center;
+}
+
+.finale__cards {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: center;
+}
+
+.finale__card {
+background-color: rgb(234, 250, 255);
+border-bottom: 8px solid var(--secondary);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+flex: 1 1 280px;
+max-width: 350px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.finale__card:hover {
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+transform: translateY(-10px);
+}
+
+.finale__card-image {
+display: block;
+height: 280px;
+object-fit: contain;
+object-position: center top;
+width: 100%;
+}
+
+.finale__card-content {
+padding: 25px;
+}
+
+.finale__card-name {
+color: var(--primary);
+font-size: 25px;
+margin: 0 0 15px;
+}
+
+@keyframes finale-winner-pulse {
+0%,
+100% {
+box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.5);
+transform: scale(1);
+}
+
+50% {
+box-shadow: 0 0 0 12px rgba(255, 215, 0, 0);
+transform: scale(1.05);
+}
+}
+
+@media screen and (max-width: 850px) {
+.finale {
+padding: 35px 5%;
+}
+
+.finale__heading {
+font-size: 32px;
+}
+
+.finale__winner {
+flex-direction: column;
+gap: 25px;
+padding: 20px;
+}
+
+.finale__winner-image-container,
+.finale__winner-content {
+width: 100%;
+}
+
+.finale__winner-image {
+height: 330px;
+}
+
+.finale__couple-name {
+font-size: 28px;
+}
+
+.finale__cards {
+align-items: center;
+flex-direction: column;
+}
+
+.finale__card {
+max-width: 100%;
+width: 100%;
+}
+
+.finale__card-image {
+height: 320px;
+}
+}
