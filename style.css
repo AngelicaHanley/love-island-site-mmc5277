@@ -1,3 +1,10 @@
+:root {
+    --primary: #ff24b1;
+    --secondary:#16e8f4;
+    --offWhite: rgb(234, 250, 255);
+    --lightPrimary: #fff0fa;
+    --lightSecondary: #d8f8ff;
+}
 
 body {
     font-family: Helvetica, Arial, Verdana, sans-serif;
@@ -7,15 +14,15 @@ body {
     padding: 0px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(234, 250, 255);
+    background-color: var(--offWhite);
 }
 
 .header {
-    background-color: hotpink;
+    background-color: var(--primary);
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    border-bottom: 10px solid rgb(0, 225, 255);
+    border-bottom: 10px solid var(--secondary);
 }
 
 a {
@@ -36,14 +43,14 @@ a {
 
 a.header__link {
     text-decoration: none;
-    color: rgb(234, 250, 255);
+    color: var(--offWhite);
     cursor: pointer;
     padding: 0px 15px;
     font-weight: bold;
 }
 
 a.header__link:hover {
-  background-color: rgb(0, 225, 255);
+  background-color: var(--secondary);
   transform: translateY(-2px);
   border-radius: 5px;
 }
@@ -67,7 +74,7 @@ a.header__link:hover {
 }
 
 .content__heading {
-    color: hotpink;
+    color: var(--primary);;
     margin: 0px;
     padding: 0px;
     font-size: clamp(25px, 2.7vw,60px);
@@ -75,7 +82,7 @@ a.header__link:hover {
 }
 
 .content__heading--blue {
-    color: rgb(0, 225, 255);
+    color: var(--secondary);
 }
 
 .content__heart {
@@ -110,10 +117,10 @@ a.header__link:hover {
 .content__section {
     display: flex;
     flex-direction: column;
-    background-color: rgb(254, 220, 237);
+    background-color: var(--lightPrimary);
     padding: 20px;
     border-radius: 20px;
-    border: 5px double hotpink;
+    border: 8px double var(--primary);;
     width: 80%;
 }
 
@@ -126,8 +133,8 @@ a.header__link:hover {
 
 .content__section--two {
     min-height: 200px;
-    background-color: rgb(193, 246, 253);
-    border: 5px double rgb(0, 225, 255);
+    background-color: var(--lightSecondary);;
+    border: 8px double var(--secondary);
 }
 
 .content__group {
@@ -140,7 +147,7 @@ a.header__link:hover {
 }
 
 .content__label {
-    color: rgb(0, 225, 255);
+    color: var(--secondary);
     margin: 0px;
     padding: 0px;
     font-weight: bold;
@@ -165,7 +172,7 @@ a.header__link:hover {
 }
 
 .cast__heading {
-    color: hotpink;
+    color: var(--primary);;
     margin: 0px;
     padding: 0px;
     text-decoration: underline;
@@ -179,15 +186,15 @@ a.header__link:hover {
 }
 
 .cast__button:hover {
-    background-color: rgb(0, 225, 255);
-    color: hotpink;
-    border: 9px double hotpink;
+    background-color: var(--secondary);
+    color: var(--primary);;
+    border: 9px double var(--primary);;
 }
 
 .cast__button {
-    background-color: hotpink;
-    color: rgb(0, 225, 255);
-    border: 9px double rgb(0, 225, 255);
+    background-color: var(--primary);;
+    color: var(--secondary);
+    border: 9px double var(--secondary);
     border-radius: 5px;
     width: auto;
     font-size: 27px;
@@ -198,12 +205,12 @@ a.header__link:hover {
 }
 
 .footer {
-    background-color: hotpink;
+    background-color: var(--primary);;
     color: rgb(234, 250, 255);
     text-align: center;
     padding: 10px;
     font-weight: bold;
-    border-top: 10px solid rgb(0, 225, 255);
+    border-top: 10px solid var(--secondary);
 }
 
 @media screen and (max-width: 850px) {
@@ -257,7 +264,7 @@ a.header__link:hover {
         width: 90%;
     }
     .cast__button {
-        border: 9px double rgb(0, 225, 255);
+        border: 9px double var(--secondary);
         width: auto;
         font-size: 19px;
         padding: 15px 35px;
