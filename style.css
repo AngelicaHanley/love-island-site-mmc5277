@@ -612,6 +612,14 @@ height: 320px;
     margin-top: 12px !important;
     padding: 7px 12px;
 }
+.cast__button--two {
+    margin: 40px 0px;
+}
+.cast__button-container {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
 
 @media (hover: hover) and (pointer: fine) {
     .cast-card:hover {
