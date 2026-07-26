@@ -86,7 +86,7 @@ a.header__link:hover {
 
 .content__heading--blue {
     color: var(--secondary);
-    margin-bottom: 9px;
+    margin-bottom: 13px;
 }
 
 .content__heading--small {
@@ -263,7 +263,13 @@ a.header__link:hover {
         align-items: center;
     }
     .content__heading {
-        font-size: 22px;
+        font-size: 24px;
+        margin: 0px 20px;
+    }
+    .content__heading--blue {
+        font-size: 24px;
+        margin-bottom: 8px;
+        margin: 0px 25px;
     }
     .content__paragraph {
         font-size: 14px;
