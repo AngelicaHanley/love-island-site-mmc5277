@@ -79,12 +79,14 @@ a.header__link:hover {
     color: var(--primary);;
     margin: 0px;
     padding: 0px;
-    font-size: clamp(20px, 2vw,60px);
-    text-transform: uppercase;
+    font-size: clamp(20px, 2.5vw,60px);
+    margin-bottom: 7px;
+    text-align: center;
 }
 
 .content__heading--blue {
     color: var(--secondary);
+    margin-bottom: 9px;
 }
 
 .content__heading--small {
@@ -147,11 +149,9 @@ a.header__link:hover {
 }
 
 .content__section--two {
-    min-height: 200px;
     background-color: var(--lightSecondary);;
     border: 8px double var(--secondary);
-    width: clamp(250px, 80%, 800px);
-   
+    width: clamp(50px, 65%, 800px);
 }
 
 .content__group {
@@ -263,7 +263,7 @@ a.header__link:hover {
         align-items: center;
     }
     .content__heading {
-        font-size: 24px;
+        font-size: 22px;
     }
     .content__paragraph {
         font-size: 14px;
